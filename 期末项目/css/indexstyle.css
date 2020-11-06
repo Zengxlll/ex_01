@@ -1,0 +1,541 @@
+/* 全局属性 */
+body {
+  background-color: #f8f9fa;
+}
+@font-face {
+  font-family: comicFont;
+  src: url("../fonts/comic.ttf");
+}
+@font-face {
+  font-family: fangsong;
+  src: url("../fonts/simfang.ttf");
+}
+@font-face {
+  font-family: javatext;
+  src: url("../fonts/javatext.ttf");
+}
+
+.Englishfont {
+  font-family: javatext;
+}
+.Chinafont {
+  font-family: fangsong;
+}
+
+/* *{outline:none;border: 0;background: none;} */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.head {
+  position: relative;
+}
+
+/* 导航栏 nav 样式 */
+.nav {
+  position: fixed;
+  z-index: 100;
+}
+
+.nav_2 {
+  color: #ffffff;
+  width: 1420px;
+  position: absolute;
+  z-index: 99;
+  transition: 0.2s;
+  background-color: rgba(100, 100, 100, 0.3);
+  box-shadow: 0 0 10px slategrey;
+}
+
+.nav_2:hover {
+  color: black;
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+
+.nav_2 li {
+  border: none;
+  background: none;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.nav_2 li:hover {
+  font-size: 22px;
+
+  box-shadow: inset 0 0 50px #ffffff,
+    /*1 内部 white */ inset 20px 0 80px #cecbc7,
+    /*2 内部 左 magenta short */ inset -20px 0 80px #cecbc7,
+    /*2 内部 右 cyan short */ inset 20px 0 300px #cecbc7,
+    /*3 内部 左 magenta broad */ inset -20px 0 300px #cecbc7,
+    /*3 内部 右 cyan broad */ 0 0 50px #ffffff,
+    /*1 外部 white */ -10px 0 80px #cecbc7,
+    /*4 外部 左 magenta */ 10px 0 80px #cecbc7; /*4 外部 右 cyan */
+  transition: 0.5s;
+}
+.nav_2 .headli {
+  margin-left: 100px;
+  margin-right: 550px;
+  font-size: 20px;
+}
+.nav_2 .firstli {
+  margin-left: 100px;
+}
+
+/* 轮播图 banner 样式 */
+.banner {
+  /* position: absolute; */
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0; /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+}
+.banner .welcometext {
+  position: relative;
+  bottom: 700px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+  -webkit-animation-name: fadeIn; /*动画名称*/
+  -webkit-animation-duration: 3s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/
+}
+.clean {
+  clear: both;
+}
+.content {
+  position: relative;
+  top: 0;
+  margin-top: -150px;
+}
+
+.content h1 {
+  text-align: center;
+}
+.content .h1text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.content .imgcontent {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.content .content1 {
+  float: left;
+  height: 790px;
+  width: 33.3333%;
+}
+.content .content1 .images1 {
+  width: 100%;
+  height: auto;
+}
+.content .content2 {
+  float: left;
+  height: 790px;
+  width: 33.3333%;
+}
+.content .content2 .images2 {
+  /* padding-top: 40px; */
+  width: 100%;
+  height: auto;
+}
+.content .content3 {
+  float: left;
+  height: 790px;
+  width: 33.3333%;
+}
+.content .content3 .images3 {
+  width: 100%;
+  height: auto;
+}
+.img-box {
+  /* 溢出隐藏 */
+  overflow: hidden;
+}
+.imgcontent .conimg {
+  display: block;
+  transition: all 3s;
+}
+
+.imgcontent .conimg:hover {
+  transform: scale(1.1);
+}
+.imgcontent .conhead {
+  margin-top: 40px;
+  color: #ff8063;
+  font-size: 20px;
+  font-family: javatext;
+}
+.imgcontent .ptext {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.imgcontent .learnbtn {
+  margin-top: 67px;
+  transition: 1s;
+}
+.imgcontent .learnbtn:hover {
+  margin-left: 20px;
+  transition: 1s;
+}
+.imgcontent .learnbtn3 {
+  margin-top: 90px;
+  transition: 1s;
+}
+.imgcontent .learnbtn3:hover {
+  margin-right: 20px;
+  transition: 1s;
+}
+.receiptInfo {
+  display: none;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+#viewReInfo2 {
+  margin-bottom: 55px;
+}
+
+.photo {
+  position: relative;
+  top: 0;
+  margin-top: 100px;
+}
+.photo .h1text {
+  padding-top: 30px;
+}
+
+.photo .photo-wall {
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+.photo-wall .photo1 {
+  position: absolute;
+  top: 225px;
+  left: 50px;
+  width: 10%;
+  height: auto;
+}
+.photo-wall .photo2 {
+  position: absolute;
+  top: 380px;
+  width: 13%;
+  height: auto;
+}
+.photo-wall .photo3 {
+  position: absolute;
+  top: 270px;
+  left: 213px;
+  width: 18%;
+  height: auto;
+}
+.photo-wall .photo4 {
+  position: absolute;
+  top: 140px;
+  left: 483px;
+  width: 25%;
+  height: auto;
+}
+.photo-wall .photo5 {
+  position: absolute;
+  top: 390px;
+  left: 483px;
+  width: 10%;
+  height: auto;
+}
+.photo-wall .photo6 {
+  position: absolute;
+  top: 390px;
+  left: 640px;
+  width: 25%;
+  height: auto;
+}
+.photo-wall .photo7 {
+  position: absolute;
+  top: 227px;
+  left: 850px;
+  width: 10%;
+  height: auto;
+}
+.photo-wall .photo8 {
+  position: absolute;
+  top: 300px;
+  left: 1005px;
+  width: 19%;
+  height: auto;
+}
+.photo-wall .photo9 {
+  position: absolute;
+  top: 240px;
+  left: 1285px;
+  width: 8%;
+  height: auto;
+}
+.photo-wall .photo10 {
+  position: absolute;
+  top: 420px;
+  left: 1285px;
+  width: 8%;
+  height: auto;
+}
+#bigImgBox {
+  /*  border: 1px solid black; */
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#imgShow {
+  position: relative;
+  top: 100px;
+  left: 0;
+  width: auto;
+  height: 500px;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+.span {
+  height: 20px;
+  text-align: center;
+  float: right;
+  position: relative;
+  right: 100px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.5s;
+  color: #ffffff;
+}
+.span:hover {
+  color: #000000;
+}
+.photo .photo-wall .photo-box {
+  overflow: hidden;
+}
+.photo .photo-wall .photo-box .photohover {
+  display: block;
+  transition: all 2s;
+}
+.photo .photo-wall .photo-box .photohover:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  position: relative;
+  top: 0;
+  width: 1400px;
+
+  margin: 0 auto;
+}
+.menu hr {
+  width: 800px;
+}
+.menu .h1text {
+  padding: 100px;
+  font-size: 60px;
+}
+
+#li1 {
+  color: #ff8063;
+}
+#menu-box2 {
+  display: none;
+}
+#menu-box3 {
+  display: none;
+}
+.menu .menuimg {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  height: 130px;
+  width: 130px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.menu .menuimg:hover {
+  border: 3px solid #ff8063;
+}
+.menu ul {
+  margin-left: 500px;
+  margin-bottom: 50px;
+}
+.menu li {
+  border: none;
+  background: none;
+}
+.menu .menutext1 {
+  position: relative;
+  left: 40px;
+  top: -40px;
+  font-size: 20px;
+}
+.menu .menutext2 {
+  position: relative;
+  left: 40px;
+  top: -40px;
+}
+.menu .menutext1-3 {
+  position: relative;
+  left: -100px;
+  top: -10px;
+}
+.menu .menutext1-4 {
+  position: relative;
+  left: -290px;
+  top: 20px;
+}
+.menu .menutext1-5 {
+  position: relative;
+  left: 475px;
+  top: -50px;
+}
+.menu .menutext2-3 {
+  position: relative;
+  left: -115px;
+  top: -10px;
+}
+.menu .menutext2-4 {
+  position: relative;
+  left: -295px;
+  top: 20px;
+}
+.menu .menutext2-5 {
+  position: relative;
+  left: 475px;
+  top: -50px;
+}
+.menu .menutext3-3 {
+  position: relative;
+  left: -80px;
+  top: -10px;
+}
+.menu .menutext3-4 {
+  position: relative;
+  left: -265px;
+  top: 20px;
+}
+.menu .menutext3-5 {
+  position: relative;
+  left: 435px;
+  top: -50px;
+}
+.menu .menutext4-3 {
+  position: relative;
+  left: -118px;
+  top: -10px;
+}
+.menu .menutext4-4 {
+  position: relative;
+  left: -318px;
+  top: 20px;
+}
+.menu .menutext4-5 {
+  position: relative;
+  left: 475px;
+  top: -50px;
+}
+.menu .panel {
+  display: none;
+}
+.menu .downarrow {
+  width: 4%;
+  height: auto;
+
+  /* background: url(../images/uparrow.png); */
+}
+
+.footer {
+  position: relative;
+  top: 0;
+  width: 1420px;
+  height: 400px;
+  /* margin: 0 auto; */
+  /* margin-top: 300px; */
+  background: #b5b5b5;
+  /* 	background: url(../images/QJ6864548508.jpg) no-z;
+ */
+}
+
+.footer .footertext {
+  padding-top: 120px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.footer .inputtext {
+  position: relative;
+  left: 500px;
+}
+.fromlist {
+  position: relative;
+  left: 400px;
+  width: 600px;
+}
+.emailimg {
+  width: 20%;
+  height: auto;
+  position: relative;
+  left: 150px;
+}
+
+.footer .logo {
+  width: 3%;
+  height: auto;
+  position: relative;
+  top: 100px;
+  left: 1190px;
+}
+.contactbox {
+  width: 400px;
+  position: relative;
+  bottom: 50px;
+  left: 650px;
+}
+.Contacttext {
+  font-size: 25px;
+  text-align: center;
+}
+.Contact {
+  width: 7%;
+  height: auto;
+  margin: 5px;
+  transition: all 1s;
+}
+
+.Contact:hover {
+  transform: scale(1.3);
+}
+#qqerweima {
+  display: none;
+}
+#weixinerweima {
+  display: none;
+}
+#weiboerweima {
+  display: none;
+}
+.erweima {
+  width: 30%;
+  height: auto;
+}
